@@ -45,7 +45,7 @@ class SingleLL{
         int sizeOfList() const;
 
         // Check if item exists
-        bool insertCheck(const int item);
+        bool insertCheck(const int item) const;
 
         // Check if List is Empty
         bool isEmpty() const; 

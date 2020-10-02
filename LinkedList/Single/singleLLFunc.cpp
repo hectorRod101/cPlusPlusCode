@@ -132,7 +132,7 @@ void SingleLL::printList() const
     Time Complexity: Best Case  O(1) 
                      Worst Case O(n)
     ================================================================= */
-bool SingleLL::insertCheck(const int item)
+bool SingleLL::insertCheck(const int item) const
 {
     if(isEmpty())
     {
@@ -223,7 +223,7 @@ void SingleLL::insertSorted(const int inputData)
     DeleteDuplicates deletes all the duplicates in the List. Returning
     a list with no duplicates.
 
-    INPUT  -- Original object list.
+    INPUT  -- nList: Original object list.
     OUTPUT -- Returns object with no duplicates.
 
     Time Complexity: Best Case  O(1) 
@@ -278,7 +278,7 @@ SingleLL SingleLL::deleteDuplicates(SingleLL& nList)
     Retreive takes the item given and checks whether it exists
     in the list and retrieves it.
 
-    INPUT  -- Integer for item.
+    INPUT  -- findItem: Integer for item.
     OUTPUT -- Returns true if item is in the list, else it 
               returns false.
 
@@ -310,7 +310,7 @@ bool SingleLL::retrieve(const int findItem) const
     InsertUnsorted enters items into the List. There can be
     duplicates, negatives, and in any order.
 
-    INPUT  -- Integer for item.
+    INPUT  -- inputData: Integer for item.
     OUTPUT -- None
 
     Time Complexity: Best Case  O(1) 
@@ -348,7 +348,7 @@ SingleLL operator+(const SingleLL& oneList, const SingleLL& secondList)
 /*  ================== returnKthTerm ==========================
     ReturnKthTerm returns the Kth to last term in the List.
 
-    INPUT  -- Integer for Kth to last index.
+    INPUT  -- nTerm: Integer for Kth to last index.
     OUTPUT -- Returns an integer for the index found, else
               returns 0 if index does not exist.
 
@@ -442,8 +442,9 @@ void SingleLL::decrement()
     SumLists sums two objects of the same length. Starting from the
     head_ node is the n*10^0, n*10^1, n*10^2, ..... n*10^i.
 
-    INPUT  -- firstL = [1]->[2]->[3]->NULL ; 321
-              secondL = [3]->[7]->[2]->NULL; 273
+    INPUT  -- firstL: List containing data; firstL = [1]->[2]->[3]->NULL ; 321
+              secondL: List containing data; secondL = [3]->[7]->[2]->NULL; 273
+              sumList: Empty list to store result.
     OUTPUT -- Return the sum of both lists into a list.
               Sum: [4]->[9]->[5]->NULL ; 594
 
