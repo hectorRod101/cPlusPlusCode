@@ -1,4 +1,4 @@
-*  ----------------------------------------------------------------- 
+/*  ----------------------------------------------------------------- 
     File doubleLLFunc.cpp impelments the function(s), constructor(s),
     and overloaded operator(s) declared inside file doubleLL.h.
     ----------------------------------------------------------------- */

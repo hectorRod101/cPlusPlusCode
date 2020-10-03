@@ -9,7 +9,7 @@
 // Distributed under the MIT License (http://opensource.org/licenses/MIT)
 //
 // Created By: Hector Rodriguez
-// Date: --#include <iostream>
+// Date: --
 #include <cctype>
 #include <cstddef>
 #include <cstdlib>
