@@ -1,4 +1,4 @@
-objects = stack.o stackFunc.cpp
+objects = stack.o stackFunc.o
 
 main.exe: $(objects)
 			g++ -o main.exe $(objects)
